@@ -1,26 +1,34 @@
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <title>
-   I Love You
-  </title>
-  <meta content="Semangat beraktifitas ya sayang" name="description"/>
-  <meta content="arul" name="author"/>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&amp;family=Roboto&amp;display=swap" rel="stylesheet"/>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js">
-  </script>
-  <script crossorigin="anonymous" integrity="sha512-synHs+rLg2WDVE9U0oHVJURDCiqft60GcWOW7tXySy8oIr0Hjl3K9gv7Bq/gSj4NDVpc5vmsNkMGGJ6t2VpUMA==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js">
-  </script>
-  <script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju.js" type="text/javascript">
-  </script>
+<head>
+  <meta charset="utf-8" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>I Love You</title>
+  <meta content="Semangat beraktifitas ya sayang" name="description" />
+  <meta content="arul" name="author" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script
+    crossorigin="anonymous"
+    integrity="sha512-synHs+rLg2WDVE9U0oHVJURDCiqft60GcWOW7tXySy8oIr0Hjl3K9gv7Bq/gSj4NDVpc5vmsNkMGGJ6t2VpUMA=="
+    referrerpolicy="no-referrer"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"
+  ></script>
+  <script
+    src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju.js"
+    type="text/javascript"
+  ></script>
   <style>
-   body {
-      font-family: 'Roboto', sans-serif;
+    body {
+      font-family: "Roboto", sans-serif;
       background-color: #fef2f2;
       margin: 0;
       padding: 0;
@@ -30,7 +38,7 @@
     }
 
     .font-pacifico {
-      font-family: 'Pacifico', cursive;
+      font-family: "Pacifico", cursive;
     }
 
     /* Scrollbar for kontener */
@@ -53,76 +61,156 @@
       border: 2px solid #fee2e2;
     }
   </style>
- </head>
- <body class="bg-pink-50 min-h-screen flex flex-col">
+</head>
+<body class="bg-pink-50 min-h-screen flex flex-col">
   <!-- Start Screen -->
-  <div class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-pink-300 via-pink-400 to-pink-500 px-6 text-white" id="kontener2">
-   <h1 class="text-5xl md:text-6xl font-pacifico mb-10 drop-shadow-lg select-none">
-    Hai Sayang
-   </h1>
-   <button class="bg-white text-pink-600 font-semibold px-8 py-4 rounded-full shadow-lg hover:bg-pink-100 transition duration-300 focus:outline-none focus:ring-4 focus:ring-pink-300" id="tombol">
-    Mulai Sekarang
-   </button>
+  <div
+    class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-pink-300 via-pink-400 to-pink-500 px-6 text-white"
+    id="kontener2"
+  >
+    <h1
+      class="text-5xl md:text-6xl font-pacifico mb-10 drop-shadow-lg select-none"
+    >
+      Hai Sayang
+    </h1>
+    <button
+      class="bg-white text-pink-600 font-semibold px-8 py-4 rounded-full shadow-lg hover:bg-pink-100 transition duration-300 focus:outline-none focus:ring-4 focus:ring-pink-300"
+      id="tombol"
+    >
+      Mulai Sekarang
+    </button>
   </div>
   <!-- Main Content -->
-  <div class="hidden flex-grow overflow-y-auto bg-pink-50 py-10 px-4 md:px-20" id="kontener">
-   <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl p-6 md:p-10">
-    <h1 class="text-4xl md:text-5xl font-pacifico text-pink-600 text-center mb-12 select-none">
-     I Love You
-    </h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-     <!-- Page 4 (moved to first) -->
-     <section class="cursor-pointer rounded-2xl border border-pink-300 p-6 shadow-md hover:shadow-lg transition duration-300 focus:outline-none focus:ring-4 focus:ring-pink-300 flex flex-col items-center text-center" onclick="PindahKeHalaman(3)" onkeypress="if(event.key==='Enter'){PindahKeHalaman(3);}" tabindex="0">
-      <h2 class="text-3xl font-semibold text-pink-700 mb-6 select-none">
-       Fitri Nur Ain M
-      </h2>
-      <h3 class="mb-6" id="waktu">
-      </h3>
-      <div class="text-pink-600 text-lg leading-relaxed space-y-4 max-w-xl" id="ucapanContainer">
-      </div>
-     </section>
-     <!-- Page 1 -->
-     <section class="cursor-pointer rounded-2xl border border-pink-300 p-6 shadow-md hover:shadow-lg transition duration-300 focus:outline-none focus:ring-4 focus:ring-pink-300" onclick="PindahKeHalaman(0)" onkeypress="if(event.key==='Enter'){PindahKeHalaman(0);}" tabindex="0">
-      <h2 class="text-3xl font-semibold text-pink-700 mb-4 select-none">
-       Aku
-      </h2>
-      <img alt="Romantic couple silhouette holding hands at sunset on a beach with warm orange and pink sky" class="rounded-xl w-full object-cover mb-5" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/6b698ccf-1eff-42da-ce4f-682ab4952f8f.jpg" width="600"/>
-      <p class="text-pink-600 text-lg leading-relaxed">
-       Aku butuh kamu seperti jantung yang membutuhkan detik. Aku
+  <div
+    class="hidden flex-grow overflow-y-auto bg-pink-50 py-10 px-4 md:px-20"
+    id="kontener"
+  >
+    <div
+      class="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl p-6 md:p-10"
+    >
+      <h1
+        class="text-4xl md:text-5xl font-pacifico text-pink-600 text-center mb-12 select-none"
+      >
+        I Love You
+      </h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <!-- Page 4 (moved to first) -->
+        <section
+          class="cursor-pointer rounded-2xl border border-pink-300 p-6 shadow-md hover:shadow-lg transition duration-300 focus:outline-none focus:ring-4 focus:ring-pink-300 flex flex-col items-center text-center"
+          onclick="PindahKeHalaman(3)"
+          onkeypress="if(event.key==='Enter'){PindahKeHalaman(3);}"
+          tabindex="0"
+        >
+          <h2
+            class="text-3xl font-semibold text-pink-700 mb-6 select-none"
+          >
+            Fitri Nur Ain M
+          </h2>
+          <h3 class="mb-6" id="waktu"></h3>
+          <div
+            class="text-pink-600 text-lg leading-relaxed space-y-4 max-w-xl"
+            id="ucapanContainer"
+          ></div>
+        </section>
+        <!-- Page 1 -->
+        <section
+          class="cursor-pointer rounded-2xl border border-pink-300 p-6 shadow-md hover:shadow-lg transition duration-300 focus:outline-none focus:ring-4 focus:ring-pink-300"
+          onclick="PindahKeHalaman(0)"
+          onkeypress="if(event.key==='Enter'){PindahKeHalaman(0);}"
+          tabindex="0"
+        >
+          <h2
+            class="text-3xl font-semibold text-pink-700 mb-4 select-none"
+          >
+            Aku
+          </h2>
+          <img
+            alt="Romantic couple silhouette holding hands at sunset on a beach with warm orange and pink sky"
+            class="rounded-xl w-full object-cover mb-5"
+            height="400"
+            loading="lazy"
+            src="https://storage.googleapis.com/a1aa/image/6b698ccf-1eff-42da-ce4f-682ab4952f8f.jpg"
+            width="600"
+          />
+          <p class="text-pink-600 text-lg leading-relaxed">
+            Aku butuh kamu seperti jantung yang membutuhkan detik. Aku
             menginginkanmu seperti gurun pasir yang mengharapkan hujan.
-      </p>
-     </section>
-     <!-- Page 2 -->
-     <section class="cursor-pointer rounded-2xl border border-pink-300 p-6 shadow-md hover:shadow-lg transition duration-300 focus:outline-none focus:ring-4 focus:ring-pink-300" onclick="PindahKeHalaman(1)" onkeypress="if(event.key==='Enter'){PindahKeHalaman(1);}" tabindex="0">
-      <h2 class="text-3xl font-semibold text-pink-700 mb-4 select-none">
-       Sayang
-      </h2>
-      <img alt="Heart shaped clouds floating in a bright blue sky with soft sunlight" class="rounded-xl w-full object-cover mb-5" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/8181b222-a5e2-4ba3-17e7-92bc1af405ce.jpg" width="600"/>
-      <p class="text-pink-600 text-lg leading-relaxed">
-       Aku Menyayangimu bukan karena siapa dirimu melainkan apa
+          </p>
+        </section>
+        <!-- Page 2 -->
+        <section
+          class="cursor-pointer rounded-2xl border border-pink-300 p-6 shadow-md hover:shadow-lg transition duration-300 focus:outline-none focus:ring-4 focus:ring-pink-300"
+          onclick="PindahKeHalaman(1)"
+          onkeypress="if(event.key==='Enter'){PindahKeHalaman(1);}"
+          tabindex="0"
+        >
+          <h2
+            class="text-3xl font-semibold text-pink-700 mb-4 select-none"
+          >
+            Sayang
+          </h2>
+          <img
+            alt="Heart shaped clouds floating in a bright blue sky with soft sunlight"
+            class="rounded-xl w-full object-cover mb-5"
+            height="400"
+            loading="lazy"
+            src="https://storage.googleapis.com/a1aa/image/8181b222-a5e2-4ba3-17e7-92bc1af405ce.jpg"
+            width="600"
+          />
+          <p class="text-pink-600 text-lg leading-relaxed">
+            Aku Menyayangimu bukan karena siapa dirimu melainkan apa
             yang telah terjadi saat aku bersamamu.
-      </p>
-     </section>
-     <!-- Page 3 -->
-     <section class="cursor-pointer rounded-2xl border border-pink-300 p-6 shadow-md hover:shadow-lg transition duration-300 focus:outline-none focus:ring-4 focus:ring-pink-300" onclick="PindahKeHalaman(2)" onkeypress="if(event.key==='Enter'){PindahKeHalaman(2);}" tabindex="0">
-      <h2 class="text-3xl font-semibold text-pink-700 mb-4 select-none">
-       Kamu
-      </h2>
-      <img alt="Starry night sky with silhouette of couple looking at stars, romantic and peaceful" class="rounded-xl w-full object-cover mb-5" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/28e1366a-c61b-4702-4278-c2855f730cb4.jpg" width="600"/>
-      <p class="text-pink-600 text-lg leading-relaxed">
-       Aku selalu berharap untuk dapat hadir di setiap mimpi²
+          </p>
+        </section>
+        <!-- Page 3 -->
+        <section
+          class="cursor-pointer rounded-2xl border border-pink-300 p-6 shadow-md hover:shadow-lg transition duration-300 focus:outline-none focus:ring-4 focus:ring-pink-300"
+          onclick="PindahKeHalaman(2)"
+          onkeypress="if(event.key==='Enter'){PindahKeHalaman(2);}"
+          tabindex="0"
+        >
+          <h2
+            class="text-3xl font-semibold text-pink-700 mb-4 select-none"
+          >
+            Kamu
+          </h2>
+          <img
+            alt="Starry night sky with silhouette of couple looking at stars, romantic and peaceful"
+            class="rounded-xl w-full object-cover mb-5"
+            height="400"
+            loading="lazy"
+            src="https://storage.googleapis.com/a1aa/image/28e1366a-c61b-4702-4278-c2855f730cb4.jpg"
+            width="600"
+          />
+          <p class="text-pink-600 text-lg leading-relaxed">
+            Aku selalu berharap untuk dapat hadir di setiap mimpi²
             indahmu. Kemudian, aku akan mengatakan bahwa aku akan selalu merindukanmu.
             <p class="font-semibold mt-4">I love you sayang &lt;3🤗🥰</p>
-      </p>
-     </section>
+          </p>
+        </section>
+      </div>
     </div>
-   </div>
   </div>
+  <footer
+    class="bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 text-white text-center py-4 mt-auto select-none shadow-inner"
+  >
+    <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4">
+      <span class="text-sm md:text-base font-semibold tracking-wide">
+        powered by
+      </span>
+      <span
+        class="font-pacifico text-lg md:text-xl tracking-wider drop-shadow-md"
+        >arxcode</span
+      >
+      <span class="text-sm md:text-base font-light opacity-80">(arul)</span>
+      <i class="fas fa-heart text-pink-300 ml-2 animate-pulse"></i>
+    </div>
+  </footer>
   <audio id="backgroundAudio" src="https://files.catbox.moe/apsp5g.mp3" loop preload="auto"></audio>
   <script>
-   // Show main content and hide start screen on button click, play audio
+    // Show main content and hide start screen on button click, play audio
     $(document).ready(function () {
-      var audio = document.getElementById('backgroundAudio');
+      var audio = document.getElementById("backgroundAudio");
       $("#tombol").click(function () {
         $("#kontener2").fadeOut();
         $("#kontener").fadeIn(4000);
@@ -141,65 +229,98 @@
     // Format and display current date and time with animation
     function formatAMPM() {
       var waktu = new Date(),
-        menit = waktu.getMinutes().toString().padStart(2, '0'),
-        jam = waktu.getHours().toString().padStart(2, '0'),
-        ampm = waktu.getHours() >= 12 ? 'PM' : 'AM',
-        bulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober',
-          'November', 'Desember'
+        menit = waktu.getMinutes().toString().padStart(2, "0"),
+        jam = waktu.getHours().toString().padStart(2, "0"),
+        ampm = waktu.getHours() >= 12 ? "PM" : "AM",
+        bulan = [
+          "Januari",
+          "Februari",
+          "Maret",
+          "April",
+          "Mei",
+          "Juni",
+          "Juli",
+          "Agustus",
+          "September",
+          "Oktober",
+          "November",
+          "Desember",
         ],
-        hari = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
-      return '<h1 class="ml1 font-pacifico text-3xl text-pink-700 mb-2"><span class="text-wrapper"><span class="line line1"></span><span class="letters">' + hari[
-          waktu.getDay()] +
-        ', ' + waktu.getDate() + ' ' + bulan[waktu.getMonth()] +
-        ' ' + waktu.getFullYear() + '</span><span class="line line2"></span></span></h1><p class="ml2 text-pink-600 text-xl font-semibold"> ' + jam + ':' +
-        menit + ' ' + ampm + ' </p>';
+        hari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+      return (
+        '<h1 class="ml1 font-pacifico text-3xl text-pink-700 mb-2"><span class="text-wrapper"><span class="line line1"></span><span class="letters">' +
+        hari[waktu.getDay()] +
+        ", " +
+        waktu.getDate() +
+        " " +
+        bulan[waktu.getMonth()] +
+        " " +
+        waktu.getFullYear() +
+        '</span><span class="line line2"></span></span></h1><p class="ml2 text-pink-600 text-xl font-semibold"> ' +
+        jam +
+        ":" +
+        menit +
+        " " +
+        ampm +
+        " </p>"
+      );
     }
 
     document.getElementById("waktu").innerHTML = formatAMPM();
 
     // Animate date and time text
     function animateText(selector) {
-      var textWrapper = document.querySelector(selector + ' .letters');
+      var textWrapper = document.querySelector(selector + " .letters");
       if (!textWrapper) return;
-      textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+      textWrapper.innerHTML = textWrapper.textContent.replace(
+        /\S/g,
+        "<span class='letter'>$&</span>"
+      );
 
-      anime.timeline({
-          loop: false
+      anime
+        .timeline({
+          loop: false,
         })
         .add({
-          targets: selector + ' .letter',
+          targets: selector + " .letter",
           scale: [0.3, 1],
           opacity: [0, 1],
           translateZ: 0,
           easing: "easeOutExpo",
           duration: 600,
-          delay: (el, i) => 70 * (i + 1)
-        }).add({
-          targets: selector + ' .line',
+          delay: function (el, i) {
+            return 70 * (i + 1);
+          },
+        })
+        .add({
+          targets: selector + " .line",
           scaleX: [0, 1],
           opacity: [0.5, 1],
           easing: "easeOutExpo",
           duration: 700,
-          offset: '-=875',
-          delay: (el, i, l) => 80 * (l - i)
-        }).add({
+          offset: "-=875",
+          delay: function (el, i, l) {
+            return 80 * (l - i);
+          },
+        })
+        .add({
           targets: selector,
           opacity: 1,
           duration: 1000,
           easing: "easeOutExpo",
-          delay: 1000
+          delay: 1000,
         });
     }
 
-    animateText('.ml1');
-    animateText('.ml2');
+    animateText(".ml1");
+    animateText(".ml2");
 
     // Display dynamic greeting message based on time
     function displayGreeting() {
       var now = new Date();
       var hour = now.getHours();
-      var container = document.getElementById('ucapanContainer');
-      container.innerHTML = '';
+      var container = document.getElementById("ucapanContainer");
+      container.innerHTML = "";
 
       if (hour >= 0 && hour < 12) {
         container.innerHTML = `
@@ -226,5 +347,5 @@
 
     displayGreeting();
   </script>
- </body>
+</body>
 </html>
